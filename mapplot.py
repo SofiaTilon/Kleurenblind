@@ -1,6 +1,8 @@
 # Print names to a map
-# Needed: list with locations/names/colors. -> should be edited for classes later?
-# spain_.jpg and font (calibri.ttf) in same folder
+# Needed: list with locations/names/colors. Should line-up
+#
+#
+#
 
 from PIL import Image, ImageDraw, ImageFont
 
