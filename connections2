@@ -1,51 +1,229 @@
 # Connections2.txt
 # Een lijst met links in kaart 2
 
-Leon                    - Zamora, Jaen
-Zamora                  - Burgos, Jaen
-Jaen                    - Leon, Zamora, Burgos, Guipuzcoa, Murcia
-Burgos                  - Zamora, Jaen, Murcia, Toledo
-Guipuzcoa               - Jaen, Murcia, Guadalajara
-Murcia                  - Jaen, Burgos, Guipuzcoa, Guadalajara, Valladolid, Cantabria, Toledo
-Toledo                  - Burgos, Murcia, Cantabria, Pontevedra
-Pontevedra              - Toledo, Cantabria, Ciudad Real, Barcelona
-Barcelona               - Pontevedra, Ciudad Real, Cadiz, Madrid
-Madrid                  - Barcelona, Cadiz, Valencia, Las Palmas, Islas Baleares, Almeria
-Almeria                 - Madrid, Islas Baleares, Caceres
-Islas Baleares          - Madrid, Almeria, Las Palmas, Albacete, Caceres
-Caceres                 - Almeria, Islas Baleares, Albacete
-Albacete                - Caceres, Islas Baleares, Las Palmas, Zaragoza
-Las Palmas              - Madrid, Islas Baleares, Albacete, Zaragoza, Santa Cruz De Tenerife, Valencia
-Valencia                - Madrid, Las Palmas, Santa Cruz De Tenerife, Vizcaya, Sevilla, Cadiz
-Cadiz                   - Barcelona, Madrid, Valencia, Sevilla, Huelva, Ciudad Real
-Ciudad Real             - Pontevedra, Barcelona, Cadiz, Huelva, Lugo, Cantabria
-Cantabria               - Murcia, Toledo, Pontevedra, Ciudad Real, Lugo, Asturias, Valladolid
-Valladolid              - Murcia, Cantabria, Asturias, Guadalajara
-Guadalajara             - Guipuzcoa, Murcia, Valladolid, Asturias, Teruel
-Teruel                  - Guadalajara, Asturias, Segovia, Soria
-Asturias                - Cantabria, Valladolid, Guadalajara, Teruel, Segovia, Huesca, Badajoz, Lugo
-Lugo                    - Asturias, Badajoz, Granada, Huelva, Ciudad Real, Cantabria
-Huelva                  - Cadiz, Ciudad Real, Lugo, Granada, Sevilla
-Sevilla                 - Cadiz, Huelva, Granada, La Coruna, Gerona, Vizcaya, Valencia
-Vizcaya                 - Valencia, Sevilla, Gerona, Alava, Cordoba, Zaragoza, Santa Cruz De Tenerife
-Santa Cruz De Tenerife  - Las Palmas, Valencia, Vizcaya, Zaragoza
-Zaragoza                - Albacete, Las Palmas, Santa Cruz De Tenerife, Vizcaya, Cordoba, Castellon
-Castellon               - Zaragoza, Cordoba
-Cordoba                 - Castellon, Zaragoza, Vizcaya, Alava
-Alava                   - Cordoba, Vizcaya, Gerona
-Gerona                  - Alava, Vizcaya, Sevilla, La Coruna, Salamanca
-La Coruna               - Gerona, Sevilla, Granada, Alicante, Orense, Salamanca
-Salamanca               - Gerona, La Coruna, Orense
-Orense                  - Salamanca, La Coruna, Alicante, Tarragona, Lerida
-Lerida                  - Orense, Tarragona, La Rioja
-La Rioja                - Lerida, Tarragona
-Tarragona               - Orense, Lerida, La Rioja, Malaga, Alicante
-Alicante                - Tarragona, Orense, La Coruna, Granada, Badajoz, Huesca, Navarra, Malaga
-Granada                 - Alicante, La Coruna, Sevilla, Huelva, Badajoz ,Lugo
-Badajoz                 - Alicante, Granada, Lugo, Asturias, Huesca
-Huesca                  - Alicante, Badajoz, Asturias, Segovia, Navarra
-Navarra                 - Malaga, Alicante, Huesca, Segovia, Soria
-Malaga                  - Tarragona, Alicante, Navarra
-Navarra                 - Malaga, Alicante, Huesca, Segovia, Soria
-Soria                   - Navarra, Segovia, Teruel
-Segovia                 - Teruel, Soria, Navarra, Huesca, Asturias
+Leon, Zamora 
+Leon, Jaen
+Zamora, Burgos
+Zamora, Jaen
+Jaen, Leon
+Jaen, Zamora
+Jaen, Burgos 
+Jaen, Guipuzcoa 
+Jaen, Murcia
+Burgos, Zamora
+Burgos, Jaen
+Burgos, Murcia
+Burgos, Toledo
+Guipuzcoa, Jaen
+Guipuzcoa, Murcia
+Guipuzcoa, Guadalajara
+Murcia, Jaen
+Murcia, Burgos
+Murcia, Guipuzcoa
+Murcia, Guadalajara
+Murcia, Valladolid
+Murcia, Cantabria
+Murcia, Toledo
+Toledo, Burgos
+Toledo, Murcia
+Toledo, Cantabria
+Toledo, Pontevedra
+Pontevedra, Toledo
+Pontevedra, Cantabria
+Pontevedra, Ciudad Real
+Pontevedra, Barcelona
+Barcelona, Pontevedra
+Barcelona, Ciudad Real
+Barcelona, Cadiz
+Barcelona, Madrid
+Madrid, Barcelona
+Madrid, Cadiz
+Madrid, Valencia
+Madrid, Las Palmas
+Madrid, Islas Baleares
+Madrid, Almeria
+Almeria, Madrid
+Almeria, Islas Baleares
+Almeria, Caceres
+Islas Baleares, Madrid
+Islas Baleares, Almeria
+Islas Baleares, Las Palmas
+Islas Baleares, Albacete
+Islas Baleares, Caceres
+Caceres, Almeria
+Caceres, Islas Baleares
+Caceres, Albacete
+Albacete, Caceres
+Albacete, Islas Baleares
+Albacete, Las Palmas
+Albacete, Zaragoza
+Las Palmas, Madrid
+Las Palmas, Islas Baleares
+Las Palmas, Albacete
+Las Palmas, Zaragoza
+Las Palmas, Santa Cruz De Tenerife
+Las Palmas, Valencia
+Valencia, Madrid
+Valencia, Las Palmas
+Valencia, Santa Cruz De Tenerife
+Valencia, Vizcaya
+Valencia, Sevilla
+Valencia, Cadiz
+Cadiz, Barcelona
+Cadiz, Madrid
+Cadiz, Valencia
+Cadiz, Sevilla
+Cadiz, Huelva
+Cadiz, Ciudad Real
+Ciudad Real, Pontevedra
+Ciudad Real, Barcelona
+Ciudad Real, Cadiz
+Ciudad Real, Huelva
+Ciudad Real, Lugo
+Ciudad Real, Cantabria
+Cantabria, Murcia
+Cantabria, Toledo
+Cantabria, Pontevedra
+Cantabria, Ciudad Real
+Cantabria, Lugo
+Cantabria, Asturias
+Cantabria, Valladolid
+Valladolid, Murcia
+Valladolid, Cantabria
+Valladolid, Asturias
+Valladolid, Guadalajara
+Guadalajara, Guipuzcoa
+Guadalajara, Murcia
+Guadalajara, Valladolid
+Guadalajara, Asturias
+Guadalajara, Teruel
+Teruel, Guadalajara
+Teruel, Asturias
+Teruel, Segovia
+Teruel, Soria
+Asturias, Cantabria
+Asturias, Valladolid
+Asturias, Guadalajara
+Asturias, Teruel
+Asturias, Segovia
+Asturias, Huesca
+Asturias, Badajoz
+Asturias, Lugo
+Lugo, Asturias
+Lugo, Badajoz
+Lugo, Granada
+Lugo, Huelva
+Lugo, Ciudad Real
+Lugo, Cantabria
+Huelva, Cadiz
+Huelva, Ciudad Real
+Huelva, Lugo
+Huelva, Granada
+Huelva, Sevilla
+Sevilla, Cadiz
+Sevilla, Huelva
+Sevilla, Granada
+Sevilla, La Coruna
+Sevilla, Gerona
+Sevilla, Vizcaya
+Sevilla, Valencia
+Vizcaya, Valencia
+Vizcaya, Sevilla
+Vizcaya, Gerona
+Vizcaya, Alava
+Vizcaya, Cordoba
+Vizcaya, Zaragoza
+Vizcaya, Santa Cruz De Tenerife
+Santa Cruz De Tenerife, Las Palmas
+Santa Cruz De Tenerife, Valencia
+Santa Cruz De Tenerife, Vizcaya
+Santa Cruz De Tenerife, Zaragoza
+Zaragoza, Albacete
+Zaragoza, Las Palmas
+Zaragoza, Santa Cruz De Tenerife
+Zaragoza, Vizcaya
+Zaragoza, Cordoba
+Zaragoza, Castellon
+Castellon, Zaragoza
+Castellon, Cordoba
+Cordoba, Castellon
+Cordoba, Zaragoza
+Cordoba, Vizcaya
+Cordoba, Alava
+Alava, Cordoba
+Alava, Vizcaya
+Alava, Gerona
+Gerona, Alava
+Gerona, Vizcaya
+Gerona, Sevilla
+Gerona, La Coruna
+Gerona, Salamanca
+La Coruna, Gerona
+La Coruna, Sevilla
+La Coruna, Granada
+La Coruna, Alicante
+La Coruna, Orense
+La Coruna, Salamanca
+Salamanca, Gerona
+Salamanca, La Coruna
+Salamanca, Orense
+Orense, Salamanca
+Orense, La Coruna
+Orense, Alicante
+Orense, Tarragona
+Orense, Lerida
+Lerida, Orense
+Lerida, Tarragona
+Lerida, La Rioja
+La Rioja, Lerida
+La Rioja, Tarragona
+Tarragona, Orense
+Tarragona, Lerida
+Tarragona, La Rioja
+Tarragona, Malaga
+Tarragona, Alicante
+Alicante, Tarragona
+Alicante, Orense
+Alicante, La Coruna
+Alicante, Granada
+Alicante, Badajoz
+Alicante, Huesca
+Alicante, Navarra
+Alicante, Malaga
+Granada, Alicante
+Granada, La Coruna
+Granada, Sevilla
+Granada, Huelva
+Granada, Badajoz 
+Granada, Lugo
+Badajoz, Alicante
+Badajoz, Granada
+Badajoz, Lugo
+Badajoz, Asturias
+Badajoz, Huesca
+Huesca, Alicante
+Huesca, Badajoz
+Huesca, Asturias
+Huesca, Segovia
+Huesca, Navarra
+Navarra, Malaga
+Navarra, Alicante
+Navarra, Huesca
+Navarra, Segovia
+Navarra, Soria
+Malaga, Tarragona
+Malaga, Alicante
+Malaga, Navarra
+Navarra, Malaga
+Navarra, Alicante
+Navarra, Huesca
+Navarra, Segovia
+Navarra, Soria
+Soria, Navarra
+Soria, Segovia
+Soria, Teruel
+Segovia, Teruel
+Segovia, Soria
+Segovia, Navarra
+Segovia, Huesca
+Segovia, Asturias
