@@ -63,7 +63,7 @@ def ConnectedTo(country):
 
 def AssignColor(country, country_list):
     '''
-    This function check which color the adjecent countries have and returns the first non used color.
+    This function checks which color the adjecent countries have and returns the first non used color.
 
     @param country: the name of the country
     @param country_list: ist of adjecent countries
