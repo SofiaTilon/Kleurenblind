@@ -1,13 +1,26 @@
+'''
+13/11/2014
+graphs.py
+Insert nodes/edges from a csv file into a graph file,
+assign colors to nodes for visualisation. Connecting 
+nodes are supposed to have different colors. Goal: use
+the least amount of colours necessary. 
+'''
+
 import networkx as nx
-import graphviz as pgv
 import matplotlib.pyplot as plt
 import csv
 
-# where the csv file is stored..
+# constants
 CSV_FILENAME = "con1.csv"
 COLOR_LIST = ["m", "b", "g", "y", "r"]
 
 def populate_graph(vertices, edges):
+	'''
+	Populate the graph with the vertices/edges.
+	@param vertices: list containing every vertex
+	@param edges: list of tuples containing the connections
+	'''
 	# create graph
 	temp_graph = nx.Graph()
 
@@ -20,7 +33,8 @@ def populate_graph(vertices, edges):
 
 def create_vertices(filename):
 	'''
-	@param filename:	csv file to be read
+	Create list of vertices from csv.
+	@param filename: csv file to be read
 	'''
 	vertices = []
 
@@ -34,7 +48,8 @@ def create_vertices(filename):
 
 def create_edges(filename):
 	'''
-	@param filename:	csv file to be read
+	Create list of edges from csv.
+	@param filename: csv file to be read
 	'''
 	edges = []
 
@@ -49,12 +64,16 @@ def create_edges(filename):
 
 def draw_save_graph(graph, filename):
 	'''
-	@param graph: 		input graph file
-	@param filename: 	output filename	
+	Draw the elements of the graph (nodes/edges/labels/axis)
+	& Save the figure to disk.
+	@param graph: input graph file
+	@param filename: output filename	
 	'''
 	# spatial distribution of the nodes
 	# k = val between 0 and 1, controls distance between nodes
 	coordinates = nx.spring_layout(graph, k=0.05, iterations=45)
+
+	print coordinates
 
 	# color algorithm to color the nodes
 	color_algorithm(graph, COLOR_LIST, coordinates)
@@ -69,7 +88,10 @@ def draw_save_graph(graph, filename):
 
 def color_algorithm(graph, colorlist, coordinates):
 	'''
-	code to color nodes goes here
+	Algorithm to color the nodes.
+	@param graph: input graph file
+	@colorlist: list of colors to assign to nodes
+	@coordinates: dictionary containing vertices and their xy data
 	'''
 
 	# create color dictionary to store colors
@@ -79,7 +101,7 @@ def color_algorithm(graph, colorlist, coordinates):
 
 	# create function that sorts the vertices from
 	# most to least neighbors
-
+	pass
 
 
 	# for every node in the graph
