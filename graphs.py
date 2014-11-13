@@ -1,22 +1,17 @@
-'''
-11 nov 14
-Functions to import a csv file into a graph & plot graph
-
-'''
-
 import networkx as nx
 import graphviz as pgv
 import matplotlib.pyplot as plt
 import csv
 
 # where the csv file is stored..
-CSV_FILENAME = "con2.csv"
+CSV_FILENAME = "con1.csv"
+COLOR_LIST = ["m", "b", "g", "y", "r"]
 
 def populate_graph(vertices, edges):
 	# create graph
 	temp_graph = nx.Graph()
 
-	# populate graph with 
+	# populate graph with vertices/edges
 	temp_graph.add_nodes_from(vertices)
 	temp_graph.add_edges_from(edges)
 
@@ -59,22 +54,60 @@ def draw_save_graph(graph, filename):
 	'''
 	# spatial distribution of the nodes
 	# k = val between 0 and 1, controls distance between nodes
-	coordinates = nx.spring_layout(graph, k=0.12, iterations=45)
+	coordinates = nx.spring_layout(graph, k=0.05, iterations=45)
 
-	# draw the nodes
-	nx.draw_networkx_nodes(graph, coordinates, node_color='b', node_size=180, alpha=0.5)
-
-	# draw the edges
+	# color algorithm to color the nodes
+	color_algorithm(graph, COLOR_LIST, coordinates)
+	
+	# draw the edges/labels/turn axis off
 	nx.draw_networkx_edges(graph, coordinates, width=0.7, alpha=0.2)
-
-	# draw labels
 	nx.draw_networkx_labels(graph, coordinates, font_size=8)
-
-
 	plt.axis('off')
 
 	# save to disk
 	plt.savefig(filename)
+
+def color_algorithm(graph, colorlist, coordinates):
+	'''
+	code to color nodes goes here
+	'''
+
+	# create color dictionary to store colors
+	color_dictionary = {}
+	for vertex in graph:
+		color_dictionary[vertex] = ''
+
+	# create function that sorts the vertices from
+	# most to least neighbors
+
+
+
+	# for every node in the graph
+	for vertex in graph:
+
+		# create a list of neighbors, and find their colors
+		neighbors = graph.neighbors(vertex)
+		neighbor_colors = []
+
+		for neighbors in neighbors:
+			neighbor_colors.append(color_dictionary[neighbors])
+
+		# find a color that is not in use by the neighbors
+		node_color = '' 
+
+		for i in range(len(colorlist)):
+			if colorlist[i] not in neighbor_colors:
+				node_color = colorlist[i]
+
+
+		# draw the vertex with the assigned color
+		nx.draw_networkx_nodes(graph, coordinates, nodelist=[vertex]\
+						,node_color=node_color, node_size=180, alpha=0.5)
+
+		# update the color dictionary
+		color_dictionary[vertex] = node_color
+
+	print "this is the color_dictionary:", color_dictionary
 
 ################### main function ######################
 
@@ -90,7 +123,7 @@ def main():
 	new_graph = populate_graph(vertices, edges)
 
 	# find neighbors!
-	print new_graph.neighbors('7')
+	# print new_graph.neighbors('7')
 
 	# draw the graph
 	draw_save_graph(new_graph, "new_graph.png")
