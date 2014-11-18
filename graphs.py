@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 import csv
 
 # constants
-CSV_FILENAME = "con1.csv"
-COLOR_LIST = ["m", "b", "g", "y", "r"]
+CSV_FILENAME = "con2.csv"
+COLOR_LIST = ["y", "w", "b", "g", "r"]
 
 def populate_graph(vertices, edges):
 	'''
@@ -71,15 +71,13 @@ def draw_save_graph(graph, filename):
 	'''
 	# spatial distribution of the nodes
 	# k = val between 0 and 1, controls distance between nodes
-	coordinates = nx.spring_layout(graph, k=0.05, iterations=45)
-
-	print coordinates
+	coordinates = nx.spring_layout(graph, k=0.07, iterations=45)
 
 	# color algorithm to color the nodes
 	color_algorithm(graph, COLOR_LIST, coordinates)
 	
 	# draw the edges/labels/turn axis off
-	nx.draw_networkx_edges(graph, coordinates, width=0.7, alpha=0.2)
+	nx.draw_networkx_edges(graph, coordinates, width=0.3, alpha=0.5)
 	nx.draw_networkx_labels(graph, coordinates, font_size=8)
 	plt.axis('off')
 
@@ -101,7 +99,6 @@ def color_algorithm(graph, colorlist, coordinates):
 
 	# create function that sorts the vertices from
 	# most to least neighbors
-	pass
 
 
 	# for every node in the graph
@@ -124,12 +121,12 @@ def color_algorithm(graph, colorlist, coordinates):
 
 		# draw the vertex with the assigned color
 		nx.draw_networkx_nodes(graph, coordinates, nodelist=[vertex]\
-						,node_color=node_color, node_size=180, alpha=0.5)
+						,node_color=node_color, node_size=100, alpha=0.5)
 
 		# update the color dictionary
 		color_dictionary[vertex] = node_color
 
-	print "this is the color_dictionary:", color_dictionary
+	# print "this is the color_dictionary:", color_dictionary
 
 ################### main function ######################
 
@@ -144,11 +141,8 @@ def main():
 	# create graph and populate with vertices/edges
 	new_graph = populate_graph(vertices, edges)
 
-	# find neighbors!
-	# print new_graph.neighbors('7')
-
 	# draw the graph
-	draw_save_graph(new_graph, "new_graph.png")
+	draw_save_graph(new_graph, "new_graph.jpg")
 
 if __name__ == '__main__':
 	main()
