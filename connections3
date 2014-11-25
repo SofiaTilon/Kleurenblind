@@ -8,7 +8,6 @@ Warren, Erie
 Warren, Venango
 Warren, Forest
 Warren, Mc Kean
-Warren, Elk
 Crawford, Erie
 Crawford, Warren
 Crawford, Venango
@@ -28,7 +27,6 @@ Forest, Venango
 Forest, Elk
 Forest, Jefferson
 Forest, Clarion
-Forest, Mc Kean
 Clarion, Butler
 Clarion, Venango
 Clarion, Forest
@@ -90,14 +88,12 @@ Jefferson, Armstrong
 Jefferson, Indiana
 Jefferson, Clearfield
 Jefferson, Elk
-Elk, Warren 
 Elk, Forest
 Elk, Jefferson
 Elk, Clearfield
 Elk, Cameron
 Elk, Mc Kean
 Mc Kean, Warren
-Mc Kean, Forest
 Mc Kean, Elk
 Mc Kean, Cameron
 Mc Kean, Potter
@@ -117,12 +113,10 @@ Clearfield, Elk
 Clearfield, Cameron
 Clearfield, Clinton
 Clearfield, Centre
-Clearfield, Blair
 Clearfield, Cambria
 Cambria, Westmoreland
 Cambria, Indiana
 Cambria, Clearfield
-Cambria, Centre
 Cambria, Blair
 Cambria, Bedford
 Cambria, Somerset
@@ -135,13 +129,11 @@ Bedford, Fulton
 Bedford, Huntingdon
 Bedford, Blair
 Bedford, Cambria
-Blair, Clearfield
 Blair, Cambria
 Blair, Bedford
 Blair, Huntigdon
 Blair, Centre
 Centre, Clearfield
-Centre, Cambria
 Centre, Blair
 Centre, Huntingdon
 Centre, Mifflin
@@ -229,7 +221,6 @@ Juniata, Mifflin
 Juniata, Huntingdon
 Juniata, Franklin
 Juniata, Perry
-Juniata, Northumberland
 Juniata, Snyder
 Snyder, Union
 Snyder, Mifflin
